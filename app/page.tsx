@@ -70,6 +70,27 @@ export default function Home() {
                       Project Implementation
                     </Link>
                   </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link
+                      href="/commissioning-solutions"
+                      className="w-full uppercase tracking-wide text-sm font-medium"
+                    >
+                      Commissioning Solutions
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link
+                      href="/operation-and-maintenance"
+                      className="w-full uppercase tracking-wide text-sm font-medium"
+                    >
+                      Operation and Maintenance
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/project-finance" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Project Finance
+                    </Link>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <a
@@ -535,6 +556,21 @@ export default function Home() {
                 <li>
                   <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
                     Project Implementation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
+                    Commissioning Solutions
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
+                    Operation and Maintenance
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
+                    Project Finance
                   </a>
                 </li>
               </ul>
