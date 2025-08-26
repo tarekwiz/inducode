@@ -1,7 +1,10 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import { useState } from 'react'
 import {
 	ArrowRight,
 	Cog,
@@ -18,6 +21,38 @@ import {
 } from 'lucide-react'
 
 export default function Home() {
+	const [formData, setFormData] = useState({
+		firstName: '',
+		lastName: '',
+		email: '',
+		company: '',
+		country: '',
+		message: ''
+	})
+
+	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		const { name, value } = e.target
+		setFormData(prev => ({
+			...prev,
+			[name]: value
+		}))
+	}
+
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault()
+		
+		const subject = encodeURIComponent(`Contact Form Submission from Homepage: General Inquiry`)
+		const body = encodeURIComponent(
+			`Name: ${formData.firstName} ${formData.lastName}\n` +
+			`Email: ${formData.email}\n` +
+			`Company: ${formData.company}\n` +
+			`Country: ${formData.country}\n\n` +
+			`Message:\n${formData.message}`
+		)
+		
+		window.location.href = `mailto:adel@inducode.com?subject=${subject}&body=${body}`
+	}
+
 	return (
 		<>
 			{/* Hero Section */}
@@ -473,7 +508,7 @@ export default function Home() {
 								</CardDescription>
 							</CardHeader>
 							<CardContent className="px-0 pb-0">
-								<form className="space-y-6">
+								<form className="space-y-6" onSubmit={handleSubmit}>
 									<div className="grid md:grid-cols-2 gap-4">
 										<div className="space-y-2">
 											<label className="text-sm font-bold text-foreground uppercase tracking-wide">
@@ -481,8 +516,12 @@ export default function Home() {
 											</label>
 											<input
 												type="text"
+												name="firstName"
+												value={formData.firstName}
+												onChange={handleInputChange}
 												className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent text-foreground"
 												placeholder="John"
+												required
 											/>
 										</div>
 										<div className="space-y-2">
@@ -491,8 +530,12 @@ export default function Home() {
 											</label>
 											<input
 												type="text"
+												name="lastName"
+												value={formData.lastName}
+												onChange={handleInputChange}
 												className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent text-foreground"
 												placeholder="Doe"
+												required
 											/>
 										</div>
 									</div>
@@ -503,8 +546,12 @@ export default function Home() {
 										</label>
 										<input
 											type="text"
+											name="company"
+											value={formData.company}
+											onChange={handleInputChange}
 											className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent text-foreground"
 											placeholder="Your Company"
+											required
 										/>
 									</div>
 
@@ -514,8 +561,27 @@ export default function Home() {
 										</label>
 										<input
 											type="email"
+											name="email"
+											value={formData.email}
+											onChange={handleInputChange}
 											className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent text-foreground"
 											placeholder="john@company.com"
+											required
+										/>
+									</div>
+
+									<div className="space-y-2">
+										<label className="text-sm font-bold text-foreground uppercase tracking-wide">
+											Country
+										</label>
+										<input
+											type="text"
+											name="country"
+											value={formData.country}
+											onChange={handleInputChange}
+											className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent text-foreground"
+											placeholder="United States"
+											required
 										/>
 									</div>
 
@@ -525,8 +591,12 @@ export default function Home() {
 										</label>
 										<textarea
 											rows={4}
+											name="message"
+											value={formData.message}
+											onChange={handleInputChange}
 											className="w-full px-3 py-2 border-2 border-border bg-input focus:outline-none focus:border-accent resize-none text-foreground"
 											placeholder="Tell us about your project..."
+											required
 										/>
 									</div>
 
