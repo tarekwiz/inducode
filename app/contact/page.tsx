@@ -1,11 +1,48 @@
+'use client'
+
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
-import { ArrowRight, Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { ArrowRight, Mail, MapPin } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Contact() {
+	const [formData, setFormData] = useState({
+		firstName: '',
+		lastName: '',
+		email: '',
+		company: '',
+		country: '',
+		subject: '',
+		message: ''
+	})
+
+	const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		const { name, value } = e.target
+		setFormData(prev => ({
+			...prev,
+			[name]: value
+		}))
+	}
+
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault()
+		
+		const subject = encodeURIComponent(`Contact Form Submission: ${formData.subject || 'General Inquiry'}`)
+		const body = encodeURIComponent(
+			`Name: ${formData.firstName} ${formData.lastName}\n` +
+			`Email: ${formData.email}\n` +
+			`Company: ${formData.company}\n` +
+			`Country: ${formData.country}\n` +
+			`Subject: ${formData.subject}\n\n` +
+			`Message:\n${formData.message}`
+		)
+		
+		window.location.href = `mailto:adel@inducode.com?subject=${subject}&body=${body}`
+	}
+
 	return (
 		<div className="min-h-screen bg-background">
 			{/* Hero Section */}
@@ -47,15 +84,19 @@ export default function Contact() {
 									</p>
 								</div>
 
-								<form className="space-y-6">
+								<form className="space-y-6" onSubmit={handleSubmit}>
 									<div className="grid md:grid-cols-2 gap-4">
 										<div className="space-y-2">
 											<label className="text-sm font-bold text-foreground uppercase tracking-wide">
 												First Name
 											</label>
 											<Input
+												name="firstName"
+												value={formData.firstName}
+												onChange={handleInputChange}
 												className="border-2 border-border bg-background"
 												placeholder="Enter your first name"
+												required
 											/>
 										</div>
 										<div className="space-y-2">
@@ -63,8 +104,12 @@ export default function Contact() {
 												Last Name
 											</label>
 											<Input
+												name="lastName"
+												value={formData.lastName}
+												onChange={handleInputChange}
 												className="border-2 border-border bg-background"
 												placeholder="Enter your last name"
+												required
 											/>
 										</div>
 									</div>
@@ -75,8 +120,12 @@ export default function Contact() {
 										</label>
 										<Input
 											type="email"
+											name="email"
+											value={formData.email}
+											onChange={handleInputChange}
 											className="border-2 border-border bg-background"
 											placeholder="Enter your email address"
+											required
 										/>
 									</div>
 
@@ -85,8 +134,26 @@ export default function Contact() {
 											Company
 										</label>
 										<Input
+											name="company"
+											value={formData.company}
+											onChange={handleInputChange}
 											className="border-2 border-border bg-background"
 											placeholder="Enter your company name"
+											required
+										/>
+									</div>
+
+									<div className="space-y-2">
+										<label className="text-sm font-bold text-foreground uppercase tracking-wide">
+											Country
+										</label>
+										<Input
+											name="country"
+											value={formData.country}
+											onChange={handleInputChange}
+											className="border-2 border-border bg-background"
+											placeholder="Enter your country"
+											required
 										/>
 									</div>
 
@@ -95,6 +162,9 @@ export default function Contact() {
 											Subject
 										</label>
 										<Input
+											name="subject"
+											value={formData.subject}
+											onChange={handleInputChange}
 											className="border-2 border-border bg-background"
 											placeholder="What can we help you with?"
 										/>
@@ -105,8 +175,12 @@ export default function Contact() {
 											Message
 										</label>
 										<Textarea
+											name="message"
+											value={formData.message}
+											onChange={handleInputChange}
 											className="border-2 border-border bg-background min-h-32"
 											placeholder="Tell us about your project requirements..."
+											required
 										/>
 									</div>
 
@@ -143,18 +217,6 @@ export default function Contact() {
 											</div>
 										</div>
 
-										<div className="flex items-start space-x-4">
-											<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center flex-shrink-0">
-												<Phone className="h-6 w-6 text-accent-foreground" />
-											</div>
-											<div>
-												<h3 className="font-bold text-foreground uppercase tracking-wide">
-													Phone
-												</h3>
-												<p className="text-muted-foreground">+1 (555) 123-4567</p>
-												<p className="text-muted-foreground">+1 (555) 123-4568</p>
-											</div>
-										</div>
 
 										<div className="flex items-start space-x-4">
 											<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center flex-shrink-0">
@@ -164,27 +226,12 @@ export default function Contact() {
 												<h3 className="font-bold text-foreground uppercase tracking-wide">
 													Address
 												</h3>
-												<p className="text-muted-foreground">1234 Energy Drive</p>
-												<p className="text-muted-foreground">Houston, TX 77001</p>
+												<p className="text-muted-foreground">32 N Gould St</p>
+												<p className="text-muted-foreground">Sheridan, WY 82801</p>
 												<p className="text-muted-foreground">United States</p>
 											</div>
 										</div>
 
-										<div className="flex items-start space-x-4">
-											<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center flex-shrink-0">
-												<Clock className="h-6 w-6 text-accent-foreground" />
-											</div>
-											<div>
-												<h3 className="font-bold text-foreground uppercase tracking-wide">
-													Business Hours
-												</h3>
-												<p className="text-muted-foreground">
-													Monday - Friday: 8:00 AM - 6:00 PM
-												</p>
-												<p className="text-muted-foreground">Saturday: 9:00 AM - 2:00 PM</p>
-												<p className="text-muted-foreground">Sunday: Closed</p>
-											</div>
-										</div>
 									</div>
 								</CardContent>
 							</Card>

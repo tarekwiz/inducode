@@ -399,11 +399,8 @@ export default function ProposalAndDesign() {
 
 							<div className="text-center space-y-4">
 								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto">
-									<Phone className="h-8 w-8 text-accent-foreground" />
-								</div>
 								<div>
 									<p className="font-bold text-foreground uppercase tracking-wide">Call Us</p>
-									<p className="text-muted-foreground">+1 (555) 123-4567</p>
 								</div>
 							</div>
 
@@ -413,7 +410,7 @@ export default function ProposalAndDesign() {
 								</div>
 								<div>
 									<p className="font-bold text-foreground uppercase tracking-wide">Visit Us</p>
-									<p className="text-muted-foreground">Houston, TX 77001, USA</p>
+									<p className="text-muted-foreground">Sheridan, WY 82801, USA</p>
 								</div>
 							</div>
 						</div>

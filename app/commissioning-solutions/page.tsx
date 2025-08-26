@@ -409,11 +409,8 @@ export default function CommissioningSolutions() {
 
 							<div className="flex items-center justify-center space-x-4">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-6 w-6 text-accent-foreground" />
-								</div>
 								<div className="text-left">
 									<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-									<p className="text-muted-foreground">+1 (555) 123-4567</p>
 								</div>
 							</div>
 
@@ -423,7 +420,7 @@ export default function CommissioningSolutions() {
 								</div>
 								<div className="text-left">
 									<p className="font-bold text-foreground uppercase tracking-wide">Location</p>
-									<p className="text-muted-foreground">Houston, TX</p>
+									<p className="text-muted-foreground">Sheridan, WY</p>
 								</div>
 							</div>
 						</div>

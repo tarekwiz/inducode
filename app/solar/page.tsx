@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Sun, Zap, Thermometer, Mail, Phone } from 'lucide-react'
+import { ArrowRight, Sun, Zap, Thermometer, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 export default function SolarPage() {
@@ -195,9 +195,6 @@ export default function SolarPage() {
 								<span className="text-muted-foreground">info@inducode.com</span>
 							</div>
 							<div className="flex items-center space-x-3">
-								<Phone className="h-5 w-5 text-accent" />
-								<span className="text-muted-foreground">+1 (555) 123-4567</span>
-							</div>
 						</div>
 					</div>
 				</div>

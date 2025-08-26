@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Shield, Droplets, Flame, AlertTriangle, Phone, Mail, MapPin, ChevronLeft } from 'lucide-react'
+import { ArrowRight, Shield, Droplets, Flame, AlertTriangle, Mail, MapPin, ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
 
 export default function FireFightingSystems() {
@@ -203,10 +203,7 @@ export default function FireFightingSystems() {
 
 							<div className="flex flex-col items-center space-y-2">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-6 w-6 text-accent-foreground" />
-								</div>
 								<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-								<p className="text-muted-foreground">+1 (555) 123-4567</p>
 							</div>
 
 							<div className="flex flex-col items-center space-y-2">
@@ -214,7 +211,7 @@ export default function FireFightingSystems() {
 									<MapPin className="h-6 w-6 text-accent-foreground" />
 								</div>
 								<p className="font-bold text-foreground uppercase tracking-wide">Location</p>
-								<p className="text-muted-foreground">Houston, TX 77001, USA</p>
+								<p className="text-muted-foreground">Sheridan, WY 82801, USA</p>
 							</div>
 						</div>
 					</div>

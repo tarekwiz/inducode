@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Wind, Zap, Settings, Shield, Mail, Phone, MapPin } from 'lucide-react'
+import { ArrowRight, Wind, Zap, Settings, Shield, Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export default function WindPoweredGeneration() {
@@ -237,12 +237,9 @@ export default function WindPoweredGeneration() {
 									<span>info@inducode.com</span>
 								</div>
 								<div className="flex items-center space-x-2">
-									<Phone className="h-4 w-4" />
-									<span>+1 (555) 123-4567</span>
-								</div>
 								<div className="flex items-center space-x-2">
 									<MapPin className="h-4 w-4" />
-									<span>Houston, TX 77001, USA</span>
+									<span>Sheridan, WY 82801, USA</span>
 								</div>
 							</div>
 						</div>

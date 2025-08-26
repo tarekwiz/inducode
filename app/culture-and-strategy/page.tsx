@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { ArrowRight, Mail, Phone } from 'lucide-react'
+import { ArrowRight, Mail } from 'lucide-react'
 import Link from 'next/link'
 
 export default function CultureAndStrategy() {
@@ -86,9 +86,6 @@ export default function CultureAndStrategy() {
 
 							<div className="flex items-center space-x-3">
 								<div className="w-10 h-10 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-5 w-5 text-accent-foreground" />
-								</div>
-								<span className="text-muted-foreground">+1 (555) 123-4567</span>
 							</div>
 						</div>
 

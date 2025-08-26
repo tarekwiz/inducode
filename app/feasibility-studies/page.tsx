@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Mail, Phone, CheckCircle, BarChart3, Calculator, FileText, TrendingUp } from 'lucide-react'
+import { ArrowRight, Mail, CheckCircle, BarChart3, Calculator, FileText, TrendingUp } from 'lucide-react'
 
 export default function FeasibilityStudies() {
 	return (
@@ -251,11 +251,8 @@ export default function FeasibilityStudies() {
 
 							<div className="flex items-center space-x-4">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-6 w-6 text-accent-foreground" />
-								</div>
 								<div className="text-left">
 									<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-									<p className="text-muted-foreground">+1 (555) 123-4567</p>
 								</div>
 							</div>
 						</div>

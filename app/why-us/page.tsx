@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, TrendingUp, Zap, Shield, Users, Mail, Phone, MapPin, Award } from 'lucide-react'
+import { ArrowRight, TrendingUp, Zap, Shield, Users, Mail, MapPin, Award } from 'lucide-react'
 import Link from 'next/link'
 
 export default function WhyUs() {
@@ -177,11 +177,8 @@ export default function WhyUs() {
 
 							<div className="flex flex-col items-center space-y-4">
 								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-8 w-8 text-accent-foreground" />
-								</div>
 								<div className="text-center">
 									<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-									<p className="text-muted-foreground">+1 (555) 123-4567</p>
 								</div>
 							</div>
 
@@ -191,7 +188,7 @@ export default function WhyUs() {
 								</div>
 								<div className="text-center">
 									<p className="font-bold text-foreground uppercase tracking-wide">Location</p>
-									<p className="text-muted-foreground">Houston, TX 77001, USA</p>
+									<p className="text-muted-foreground">Sheridan, WY 82801, USA</p>
 								</div>
 							</div>
 						</div>

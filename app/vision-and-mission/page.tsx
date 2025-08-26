@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Target, Eye, Mail, Phone, MapPin } from 'lucide-react'
+import { ArrowRight, Target, Eye, Mail, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 export default function VisionAndMission() {
@@ -210,11 +210,8 @@ export default function VisionAndMission() {
 
 							<div className="flex items-center justify-center space-x-3">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-									<Phone className="h-6 w-6 text-accent-foreground" />
-								</div>
 								<div className="text-left">
 									<p className="font-bold text-foreground uppercase tracking-wide text-sm">Phone</p>
-									<p className="text-muted-foreground text-sm">+1 (555) 123-4567</p>
 								</div>
 							</div>
 
@@ -226,7 +223,7 @@ export default function VisionAndMission() {
 									<p className="font-bold text-foreground uppercase tracking-wide text-sm">
 										Location
 									</p>
-									<p className="text-muted-foreground text-sm">Houston, TX 77001</p>
+									<p className="text-muted-foreground text-sm">Sheridan, WY 82801</p>
 								</div>
 							</div>
 						</div>
