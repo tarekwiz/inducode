@@ -92,6 +92,13 @@ export default function Header() {
 										>
 											LPG & GAS Safety System
 										</Link>
+										<Link
+											href="/thermo-and-heating-systems
+"
+											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
+										>
+											Thermo and Heating Systems
+										</Link>
 									</div>
 								</div>
 							</div>
