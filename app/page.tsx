@@ -93,6 +93,39 @@ export default function Home() {
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
+              <DropdownMenu>
+                <DropdownMenuTrigger className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm">
+                  About Us
+                  <ChevronDown className="ml-1 h-3 w-3" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-48">
+                  <DropdownMenuItem asChild>
+                    <Link href="/why-us" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Why Us
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/vision-and-mission" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Vision and Mission
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/culture-and-strategy" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Culture and Strategy
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/values" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Values
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/operating-principles" className="w-full uppercase tracking-wide text-sm font-medium">
+                      Operating Principles
+                    </Link>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <a
                 href="#contact"
                 className="text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm"
