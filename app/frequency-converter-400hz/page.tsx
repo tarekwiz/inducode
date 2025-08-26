@@ -38,7 +38,7 @@ export default function FrequencyConverter400Hz() {
 								Request a Quote
 								<ArrowRight className="ml-2 h-5 w-5" />
 							</Button>
-							<a href="/downloads/60TO400.docx" download="60-400Hz_Frequency_Converter_Datasheet.docx">
+							<a href="/downloads/60HZ_TO_400HZ_MGF.pdf" download="60Hz_to_400Hz_Frequency_Converter_Datasheet.pdf">
 								<Button
 									variant="outline"
 									size="lg"

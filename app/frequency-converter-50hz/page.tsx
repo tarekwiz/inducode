@@ -38,7 +38,7 @@ export default function FrequencyConverter50Hz() {
 								Request a Quote
 								<ArrowRight className="ml-2 h-5 w-5" />
 							</Button>
-							<a href="/downloads/50H_MODEL_MOTOR.docx" download="50Hz_Frequency_Converter_Datasheet.docx">
+							<a href="/downloads/60HZ_TO_50HZ_MGF.pdf" download="60Hz_to_50Hz_Frequency_Converter_Datasheet.pdf">
 								<Button
 									variant="outline"
 									size="lg"
