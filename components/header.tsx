@@ -38,102 +38,139 @@ export default function Header() {
 					<div className="hidden md:flex items-center space-x-6">
 						<div className="relative group">
 							<button className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm p-2">
+								About Us
+								<ChevronDown className="ml-1 h-3 w-3" />
+							</button>
+							<div className="absolute top-full left-0 w-64 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+								<Link
+									href="/why-us"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Why Us
+								</Link>
+								<Link
+									href="/vision-and-mission"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Vision and Mission
+								</Link>
+								<Link
+									href="/culture-and-strategy"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Culture and Strategy
+								</Link>
+								<Link
+									href="/values"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Values
+								</Link>
+								<Link
+									href="/operating-principles"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Operating Principles
+								</Link>
+							</div>
+						</div>
+
+						<div className="relative group">
+							<button className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm p-2">
 								Technologies & Solutions
 								<ChevronDown className="ml-1 h-3 w-3" />
 							</button>
 							<div className="absolute top-full left-0 min-w-80 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<div className="relative group/nested">
-									<button className="w-full px-4 py-3 text-left hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm flex items-center justify-between">
-										Energy Technologies & Solutions
-										<ChevronDown className="h-3 w-3 rotate-[-90deg]" />
-									</button>
-									<div className="absolute top-0 left-full min-w-80 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 ">
-										<Link
-											href="/combined-heat-power"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Combined Heat & Power (CHP)
-										</Link>
-										<Link
-											href="/tri-generation"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Tri-Generation
-										</Link>
-										<Link
-											href="/district-heating-cooling"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											District Heating & Cooling
-										</Link>
-										<Link
-											href="/waste-heat-to-power"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Waste Heat to Power
-										</Link>
-										<Link
-											href="/energy-transfer-stations"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Energy Transfer Stations
-										</Link>
-										<Link
-											href="/conventional-power-generation"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Conventional Power Generation
-										</Link>
-										<Link
-											href="/solar"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Solar
-										</Link>
-										<Link
-											href="/wind-powered-generation"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Wind Powered Generation (WPG)
-										</Link>
-										<Link
-											href="/fire-fighting-systems"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Fire Fighting Systems
-										</Link>
-										<Link
-											href="/lpg-gas-safety-system"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											LPG & GAS Safety System
-										</Link>
-										<Link
-											href="/thermo-and-heating-systems"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Thermo and Heating Systems
-										</Link>
-										<Link
-											href="/comfort-hvac-technologies"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Comfort & HVAC Technologies
-										</Link>
-										<Link
-											href="/low-medium-voltage-distribution"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Low & Medium Voltage Distribution
-										</Link>
-										<Link
-											href="/low-current-system"
-											className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-										>
-											Low Current System
-										</Link>
-									</div>
-								</div>
+								<Link
+									href="/combined-heat-power"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Combined Heat & Power (CHP)
+								</Link>
+								<Link
+									href="/tri-generation"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Tri-Generation
+								</Link>
+								<Link
+									href="/district-heating-cooling"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									District Heating & Cooling
+								</Link>
+								<Link
+									href="/waste-heat-to-power"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Waste Heat to Power
+								</Link>
+								<Link
+									href="/energy-transfer-stations"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Energy Transfer Stations
+								</Link>
+								<Link
+									href="/conventional-power-generation"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Conventional Power Generation
+								</Link>
+								<Link
+									href="/solar"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Solar
+								</Link>
+								<Link
+									href="/wind-powered-generation"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Wind Powered Generation (WPG)
+								</Link>
+								<Link
+									href="/fire-fighting-systems"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Fire Fighting Systems
+								</Link>
+								<Link
+									href="/lpg-gas-safety-system"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									LPG & GAS Safety System
+								</Link>
+								<Link
+									href="/thermo-and-heating-systems"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Thermo and Heating Systems
+								</Link>
+								<Link
+									href="/comfort-hvac-technologies"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Comfort & HVAC Technologies
+								</Link>
+								<Link
+									href="/low-medium-voltage-distribution"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Low & Medium Voltage Distribution
+								</Link>
+								<Link
+									href="/low-current-system"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Low Current System
+								</Link>
+								<Link
+									href="/energy-solutions"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									Energy Solutions
+								</Link>
 							</div>
 						</div>
 
@@ -182,44 +219,12 @@ export default function Header() {
 							</div>
 						</div>
 
-						<div className="relative group">
-							<button className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm p-2">
-								About Us
-								<ChevronDown className="ml-1 h-3 w-3" />
-							</button>
-							<div className="absolute top-full left-0 w-64 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-								<Link
-									href="/why-us"
-									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-								>
-									Why Us
-								</Link>
-								<Link
-									href="/vision-and-mission"
-									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-								>
-									Vision and Mission
-								</Link>
-								<Link
-									href="/culture-and-strategy"
-									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-								>
-									Culture and Strategy
-								</Link>
-								<Link
-									href="/values"
-									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-								>
-									Values
-								</Link>
-								<Link
-									href="/operating-principles"
-									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
-								>
-									Operating Principles
-								</Link>
-							</div>
-						</div>
+						<Link
+							href="/engineering-capabilities"
+							className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm p-2"
+						>
+							Engineering Capabilities
+						</Link>
 					</div>
 
 					{/* Desktop Get Started Button */}
@@ -252,9 +257,6 @@ export default function Header() {
 								{mobileDropdownOpen && (
 									<div className="pl-4 space-y-2 bg-muted border-t border-border">
 										<div className="py-2 space-y-1">
-											<p className="px-4 py-2 text-xs font-bold text-foreground uppercase tracking-wide">
-												Energy Technologies & Solutions
-											</p>
 											<Link
 												href="/combined-heat-power"
 												className="block px-4 py-2 text-sm text-muted-foreground hover:text-accent hover:bg-background transition-colors"
@@ -353,9 +355,27 @@ export default function Header() {
 											>
 												Low Current System
 											</Link>
+											<Link
+												href="/energy-solutions"
+												className="block px-4 py-2 text-sm text-muted-foreground hover:text-accent hover:bg-background transition-colors"
+												onClick={() => setMobileMenuOpen(false)}
+											>
+												Energy Solutions
+											</Link>
 										</div>
 									</div>
 								)}
+							</div>
+
+							{/* Engineering Capabilities Mobile */}
+							<div className="px-4 py-3 border-t border-border">
+								<Link
+									href="/engineering-capabilities"
+									className="block py-2 text-sm text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide"
+									onClick={() => setMobileMenuOpen(false)}
+								>
+									Engineering Capabilities
+								</Link>
 							</div>
 
 							{/* Services Mobile */}
