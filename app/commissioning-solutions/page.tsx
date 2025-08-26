@@ -29,14 +29,14 @@ export default function CommissioningSolutions() {
 						>
 							Commissioning Solutions
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">SYSTEM</span>
 							<br />
 							<span className="text-accent">COMMISSIONING</span>
 							<br />
 							<span className="text-foreground">& VERIFICATION</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							Ensuring maximum efficiency and optimal performance of your designed and implemented systems
 							through comprehensive commissioning services.
 						</p>

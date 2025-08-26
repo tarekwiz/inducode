@@ -17,12 +17,12 @@ export default function ValuesPage() {
 						>
 							Our Core Values
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">VALUES THAT</span>
 							<br />
 							<span className="text-accent">DRIVE EXCELLENCE</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
 							The fundamental principles that guide our operations, decisions, and relationships with
 							clients and colleagues.
 						</p>

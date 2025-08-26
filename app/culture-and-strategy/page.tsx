@@ -10,7 +10,7 @@ export default function CultureAndStrategy() {
 			<section className="py-20 lg:py-32">
 				<div className="container mx-auto px-4">
 					<div className="text-center space-y-8 max-w-4xl mx-auto">
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">CULTURE</span>
 							<br />
 							<span className="text-accent">&</span>

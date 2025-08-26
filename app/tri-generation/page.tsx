@@ -17,12 +17,12 @@ export default function TriGeneration() {
 						>
 							Energy Technology
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">TRI-GENERATION</span>
 							<br />
 							<span className="text-accent">TECHNOLOGY</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							The generation of three energy outputs (electricity, heat, and chilled water) from one
 							single fuel input, maximizing energy efficiency and cost savings.
 						</p>

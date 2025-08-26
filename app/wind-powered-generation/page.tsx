@@ -17,12 +17,12 @@ export default function WindPoweredGeneration() {
 						>
 							Wind Energy Solutions
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">WIND POWERED</span>
 							<br />
 							<span className="text-accent">GENERATION (WPG)</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							In the current climate of rising energy prices and uncertain fossil fuel price stability,
 							and with the increasing impact of 'carbon taxes' or carbon trading schemes on-site WPG
 							provides an attractive and economic alternative to imported grid electricity.

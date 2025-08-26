@@ -17,12 +17,12 @@ export default function VisionAndMission() {
 						>
 							About Inducode Technologies
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">OUR</span>
 							<br />
 							<span className="text-accent">VISION & MISSION</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
 							Driving the future of sustainable energy technologies and industrial solutions worldwide.
 						</p>
 					</div>

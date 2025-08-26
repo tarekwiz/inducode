@@ -17,12 +17,12 @@ export default function SolarPage() {
 						>
 							Solar Energy Solutions
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">SOLAR</span>
 							<br />
 							<span className="text-accent">ENERGY TECHNOLOGIES</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
 							Comprehensive solar energy solutions from photovoltaic systems to concentrated solar power
 							and thermal heating applications.
 						</p>

@@ -17,12 +17,12 @@ export default function ProjectFinance() {
 						>
 							Financial Solutions
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">PROJECT</span>
 							<br />
 							<span className="text-accent">FINANCE</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							Flexible finance solutions to deliver energy savings for your business through ESCo and BOO
 							models.
 						</p>

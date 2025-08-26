@@ -17,12 +17,12 @@ export default function DistrictHeatingCooling() {
 						>
 							Energy Distribution Systems
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">DISTRICT HEATING</span>
 							<br />
 							<span className="text-accent">& COOLING SYSTEMS</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							A District Cooling/Heating system distributes energy in the form of chilled water, hot water
 							or steam from a central source to high density developments through a network of pipes.
 						</p>

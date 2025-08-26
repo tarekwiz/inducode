@@ -17,12 +17,12 @@ export default function FireFightingSystems() {
 						>
 							Fire Safety Solutions
 						</Badge>
-						<h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
+						<h1 className="text-3xl  lg:text-4xl font-bold leading-tight tracking-tight">
 							<span className="text-foreground">FIRE FIGHTING</span>
 							<br />
 							<span className="text-accent">SYSTEMS</span>
 						</h1>
-						<p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+						<p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
 							A firefighting system is probably the most important of the building services, as its aim is
 							to protect human life and property, strictly in that order.
 						</p>
