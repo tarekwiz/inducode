@@ -25,13 +25,13 @@ export default function Header() {
 								Technologies & Solutions
 								<ChevronDown className="ml-1 h-3 w-3" />
 							</button>
-							<div className="absolute top-full left-0 w-64 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							<div className="absolute top-full left-0 min-w-80 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<div className="relative group/nested">
 									<button className="w-full px-4 py-3 text-left hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm flex items-center justify-between">
 										Energy Technologies & Solutions
 										<ChevronDown className="h-3 w-3 rotate-[-90deg]" />
 									</button>
-									<div className="absolute top-0 left-full w-56 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200">
+									<div className="absolute top-0 left-full min-w-80 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 ">
 										<Link
 											href="/combined-heat-power"
 											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
