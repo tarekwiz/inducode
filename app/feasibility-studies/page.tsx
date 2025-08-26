@@ -1,79 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import {
-  ArrowRight,
-  Mail,
-  Phone,
-  ChevronDown,
-  CheckCircle,
-  BarChart3,
-  Calculator,
-  FileText,
-  TrendingUp,
-} from "lucide-react"
-import Link from "next/link"
+import { ArrowRight, Mail, Phone, CheckCircle, BarChart3, Calculator, FileText, TrendingUp } from "lucide-react"
 
 export default function FeasibilityStudies() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b-2 border-border bg-card sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent border-2 border-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">I</span>
-              </div>
-              <div>
-                <h1 className="font-bold text-2xl text-foreground tracking-wider">INDUCODE</h1>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest font-medium">TECHNOLOGIES</p>
-              </div>
-            </Link>
-
-            <div className="hidden md:flex items-center space-x-8">
-              <Link
-                href="/#about"
-                className="text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm"
-              >
-                Engineering
-              </Link>
-              <Link
-                href="/#services"
-                className="text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm"
-              >
-                Solutions
-              </Link>
-              <DropdownMenu>
-                <DropdownMenuTrigger className="flex items-center text-accent font-medium uppercase tracking-wide text-sm">
-                  Services
-                  <ChevronDown className="ml-1 h-3 w-3" />
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-48">
-                  <DropdownMenuItem asChild>
-                    <Link href="/feasibility-studies" className="w-full uppercase tracking-wide text-sm font-medium">
-                      Feasibility Studies
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-              <Link
-                href="/#contact"
-                className="text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm"
-              >
-                Contact
-              </Link>
-            </div>
-
-            <Button className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </nav>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32">
         <div className="absolute inset-0 bg-background"></div>
@@ -309,99 +241,6 @@ export default function FeasibilityStudies() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 border-t-2 border-border">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <Link href="/" className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-accent border-2 border-accent flex items-center justify-center">
-                  <span className="text-accent-foreground font-bold text-sm">I</span>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg tracking-wider">INDUCODE</h3>
-                  <p className="text-xs uppercase tracking-widest opacity-80">TECHNOLOGIES</p>
-                </div>
-              </Link>
-              <p className="text-sm opacity-80 leading-relaxed">
-                Inducode Technologies LLC is one of the world's most trusted providers of sustainable energy efficient
-                technologies for businesses.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-bold uppercase tracking-wide">Services</h4>
-              <ul className="space-y-2 text-sm opacity-80">
-                <li>
-                  <Link
-                    href="/feasibility-studies"
-                    className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide"
-                  >
-                    Feasibility Studies
-                  </Link>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    Energy Audits
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    Project Management
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    Commissioning
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-bold uppercase tracking-wide">Solutions</h4>
-              <ul className="space-y-2 text-sm opacity-80">
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    CHP Systems
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    Fire Fighting
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    HVAC Design
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide">
-                    Energy Optimization
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-bold uppercase tracking-wide">Contact Us</h4>
-              <div className="space-y-2 text-sm opacity-80">
-                <p>info@inducode.com</p>
-                <p>+1 (555) 123-4567</p>
-                <p>Houston, TX 77001, USA</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t-2 border-primary-foreground/20 mt-8 pt-8 text-center">
-            <p className="text-sm opacity-80 uppercase tracking-wide">
-              Copyright 2025 Inducode Technologies LLC. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

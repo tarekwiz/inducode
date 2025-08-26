@@ -421,20 +421,24 @@ export default function ProjectImplementation() {
               Contact us today to discuss your requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
-              >
-                <Link href="/#contact">Start Your Project</Link>
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-2 border-border hover:bg-muted font-bold uppercase tracking-wide bg-transparent"
-              >
-                <Link href="/">Learn More About Our Services</Link>
-              </Button>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
+                >
+                  Start Your Project
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link href="/">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-border hover:bg-muted font-bold uppercase tracking-wide bg-transparent"
+                >
+                  Learn More About Our Services
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

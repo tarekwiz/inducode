@@ -7,31 +7,6 @@ import Link from "next/link"
 export default function OperationAndMaintenance() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b-2 border-border bg-card sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent border-2 border-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">I</span>
-              </div>
-              <div>
-                <h1 className="font-bold text-2xl text-foreground tracking-wider">INDUCODE</h1>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest font-medium">TECHNOLOGIES</p>
-              </div>
-            </Link>
-            <Link href="/">
-              <Button
-                variant="outline"
-                className="border-2 border-border hover:bg-muted font-bold uppercase tracking-wide bg-transparent"
-              >
-                Back to Home
-              </Button>
-            </Link>
-          </nav>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-4">
@@ -128,13 +103,15 @@ export default function OperationAndMaintenance() {
               maintenance strategies.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="/contact">
+                <Button
+                  size="lg"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
+                >
+                  Get Started
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button
                 variant="outline"
                 size="lg"
@@ -146,26 +123,6 @@ export default function OperationAndMaintenance() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-12 border-t-2 border-border">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-accent border-2 border-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">I</span>
-              </div>
-              <div>
-                <h3 className="font-bold text-lg tracking-wider">INDUCODE</h3>
-                <p className="text-xs uppercase tracking-widest opacity-80">TECHNOLOGIES</p>
-              </div>
-            </div>
-            <p className="text-sm opacity-80 uppercase tracking-wide">
-              Copyright 2025 Inducode Technologies LLC. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }

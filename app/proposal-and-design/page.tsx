@@ -377,7 +377,7 @@ export default function ProposalAndDesign() {
                 asChild
                 className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
               >
-                <Link href="/#contact">
+                <Link href="/contact">
                   Contact Us Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

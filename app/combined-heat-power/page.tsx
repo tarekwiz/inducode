@@ -9,28 +9,7 @@ export default function CombinedHeatPowerPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b-2 border-border bg-card sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-accent border-2 border-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">I</span>
-              </div>
-              <div>
-                <h1 className="font-bold text-2xl text-foreground tracking-wider">INDUCODE</h1>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest font-medium">TECHNOLOGIES</p>
-              </div>
-            </Link>
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide"
-            >
-              <Link href="/#contact">
-                Contact Us
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </nav>
-        </div>
+        
       </header>
 
       {/* Hero Section */}
