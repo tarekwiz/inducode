@@ -1,19 +1,20 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import Link from 'next/link'
 import {
 	ArrowRight,
 	Cog,
 	Leaf,
 	Users,
 	Mail,
-	Phone,
 	MapPin,
 	Zap,
 	Shield,
 	Settings,
 	Network,
 	Thermometer,
+	Globe,
 } from 'lucide-react'
 
 export default function Home() {
@@ -36,11 +37,10 @@ export default function Home() {
 								<br />
 								<span className="text-foreground">ENERGY TECHNOLOGIES</span>
 								<br />
-								<span className="text-accent">& INDUSTRIAL SOLUTIONS</span>
+								<span className="text-accent">& COMFORT SOLUTIONS</span>
 							</h1>
 							<p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-								Leading provider of innovative engineering solutions for sustainable energy systems,
-								process optimization, and industrial technologies.
+								Inducode Technologies LLC is one of the World's most trusted providers of sustainable energy efficient technologies for businesses.
 							</p>
 						</div>
 
@@ -217,56 +217,68 @@ export default function Home() {
 					</div>
 
 					<div className="grid md:grid-cols-3 gap-8">
-						<Card className="group hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card">
-							<CardHeader className="text-center pb-4">
-								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto mb-4">
-									<Cog className="h-8 w-8 text-accent-foreground" />
-								</div>
-								<CardTitle className="text-accent uppercase tracking-wide">Engineering</CardTitle>
-							</CardHeader>
-							<CardContent className="text-center space-y-4">
-								<h3 className="font-semibold text-lg uppercase tracking-wide">Process Engineering</h3>
-								<p className="text-muted-foreground leading-relaxed">
-									Designing HVAC and HVAC-R engineering using industry-leading software and best
-									practices. Modeling of processes and Using Spread Sheet Based Engineering
-									calculations, Commissioning and Start-up of systems and equipment.
-								</p>
-							</CardContent>
-						</Card>
+						<Link href="/engineering-capabilities" className="group">
+							<Card className="hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card h-full">
+								<CardHeader className="text-center pb-4">
+									<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto mb-4">
+										<Cog className="h-8 w-8 text-accent-foreground" />
+									</div>
+									<CardTitle className="text-accent uppercase tracking-wide">Engineering</CardTitle>
+								</CardHeader>
+								<CardContent className="text-center space-y-4">
+									<h3 className="font-semibold text-lg uppercase tracking-wide">Process Engineering</h3>
+									<p className="text-muted-foreground leading-relaxed">
+										Preparing PFD's and P&ID's, P&ID drafting using SPPID, Process calculation using Aspen HYSYS, Handling of process data Using Special Data Base, Pre-commissioning assistance, Commissioning assistance, Updating/revision of P&ID's in compliance with detail engineering execution.
+									</p>
+									<Button className="w-full mt-4 group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300 border-2 border-border hover:border-accent font-bold uppercase tracking-wide">
+										Find out more
+										<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+									</Button>
+								</CardContent>
+							</Card>
+						</Link>
 
-						<Card className="group hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card">
-							<CardHeader className="text-center pb-4">
-								<div className="w-16 h-16 bg-secondary border-2 border-secondary flex items-center justify-center mx-auto mb-4">
-									<Users className="h-8 w-8 text-secondary-foreground" />
-								</div>
-								<CardTitle className="text-secondary uppercase tracking-wide">Services</CardTitle>
-							</CardHeader>
-							<CardContent className="text-center space-y-4">
-								<h3 className="font-semibold text-lg uppercase tracking-wide">Professional Services</h3>
-								<p className="text-muted-foreground leading-relaxed">
-									We provide engineering services such as feasibility studies, energy audits, design
-									engineering, project management, procurement, construction management,
-									commissioning, start-up, and training.
-								</p>
-							</CardContent>
-						</Card>
+						<Link href="/feasibility-studies" className="group">
+							<Card className="hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card h-full">
+								<CardHeader className="text-center pb-4">
+									<div className="w-16 h-16 bg-secondary border-2 border-secondary flex items-center justify-center mx-auto mb-4">
+										<Users className="h-8 w-8 text-secondary-foreground" />
+									</div>
+									<CardTitle className="text-secondary uppercase tracking-wide">Services</CardTitle>
+								</CardHeader>
+								<CardContent className="text-center space-y-4">
+									<h3 className="font-semibold text-lg uppercase tracking-wide">Substantial Financial</h3>
+									<p className="text-muted-foreground leading-relaxed">
+										Inducode Technologies LLC is an energy infrastructure developer for renewable and conventional electrical, cooling and heat energy solutions. We use the latest technologies providing substantial financial and CO2 savings to our customers through EPC (Engineer Procure Construct) and/or BOO (Build, Own Operate) contracts.
+									</p>
+									<Button className="w-full mt-4 group-hover:bg-secondary group-hover:text-secondary-foreground transition-all duration-300 border-2 border-border hover:border-secondary font-bold uppercase tracking-wide">
+										Find out more
+										<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+									</Button>
+								</CardContent>
+							</Card>
+						</Link>
 
-						<Card className="group hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card">
-							<CardHeader className="text-center pb-4">
-								<div className="w-16 h-16 bg-chart-3 border-2 border-chart-3 flex items-center justify-center mx-auto mb-4">
-									<Leaf className="h-8 w-8 text-white" />
-								</div>
-								<CardTitle className="text-chart-3 uppercase tracking-wide">Solutions</CardTitle>
-							</CardHeader>
-							<CardContent className="text-center space-y-4">
-								<h3 className="font-semibold text-lg uppercase tracking-wide">Petroleum & Chemical</h3>
-								<p className="text-muted-foreground leading-relaxed">
-									Thermal Process Engineering projects, design and analysis of heat exchangers,
-									improved oil recovery, carbon sequestration, improved oil recovery, production
-									optimization, optimization and improvement of petroleum refining processes.
-								</p>
-							</CardContent>
-						</Card>
+						<Link href="/energy-solutions" className="group">
+							<Card className="hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card h-full">
+								<CardHeader className="text-center pb-4">
+									<div className="w-16 h-16 bg-chart-3 border-2 border-chart-3 flex items-center justify-center mx-auto mb-4">
+										<Leaf className="h-8 w-8 text-white" />
+									</div>
+									<CardTitle className="text-chart-3 uppercase tracking-wide">Solutions</CardTitle>
+								</CardHeader>
+								<CardContent className="text-center space-y-4">
+									<h3 className="font-semibold text-lg uppercase tracking-wide">Petroleum & Chemical</h3>
+									<p className="text-muted-foreground leading-relaxed">
+										Chemical Process Engineers research, design and develop chemical processes and equipment to expand operations, improve efficiencies, reduce emissions and resolve issues in the oil and gas industry. These engineers also oversee the operation, performance, optimization and maintenance of petroleum production, processing, upgrading, liquefaction and refining
+									</p>
+									<Button className="w-full mt-4 group-hover:bg-chart-3 group-hover:text-white transition-all duration-300 border-2 border-border hover:border-chart-3 font-bold uppercase tracking-wide">
+										Find out more
+										<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+									</Button>
+								</CardContent>
+							</Card>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -310,6 +322,110 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* Frequency Converter Services */}
+			<section className="py-20">
+				<div className="container mx-auto px-4">
+					<div className="text-center space-y-4 mb-16">
+						<Badge
+							variant="secondary"
+							className="w-fit bg-accent/10 text-accent border-2 border-accent font-bold uppercase tracking-wide mx-auto"
+						>
+							Frequency Conversion Solutions
+						</Badge>
+						<h2 className="text-3xl lg:text-4xl font-bold text-foreground uppercase tracking-wide">
+							Precision Power Conversion
+						</h2>
+						<p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+							Professional-grade frequency converters for military, industrial, and laboratory applications
+						</p>
+					</div>
+
+					<div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+						<Link href="/frequency-converter-400hz" className="group">
+							<Card className="hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card h-full">
+								<div className="border-b-2 border-border flex justify-center p-8">
+									<Zap className="size-20 group-hover:text-accent" />
+								</div>
+								<CardContent className="p-6">
+									<h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide">
+										60Hz to 400Hz Frequency Converters
+									</h3>
+									<p className="text-muted-foreground mb-6 leading-relaxed">
+										Provide a clean, isolated 400 Hz power source for your critical equipment, from military applications to university laboratories. The 400G Model delivers precise output with high overload capability.
+									</p>
+									<div className="space-y-2 mb-6">
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Model 400G-160: 160 kVA (128 kW)</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">±1% Voltage Regulation</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Military & Laboratory Use</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Less than 3% THD</span>
+										</div>
+									</div>
+									<Button className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300 border-2 border-border hover:border-accent font-bold uppercase tracking-wide">
+										Learn More
+										<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+									</Button>
+								</CardContent>
+							</Card>
+						</Link>
+
+						<Link href="/frequency-converter-50hz" className="group">
+							<Card className="hover:shadow-lg transition-all duration-300 border-2 border-border hover:border-accent bg-card h-full">
+								<div className="border-b-2 border-border flex justify-center p-8">
+									<Globe className="size-20 group-hover:text-accent" />
+								</div>
+								<CardContent className="p-6">
+									<h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-accent transition-colors duration-300 uppercase tracking-wide">
+										60Hz to 50Hz and Vice Versa
+									</h3>
+									<p className="text-muted-foreground mb-6 leading-relaxed">
+										Ensure your foreign-sourced equipment operates seamlessly with our robust and reliable 50 Hz power solutions. The 50H Model provides clean, isolated power for global compatibility.
+									</p>
+									<div className="space-y-2 mb-6">
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Model 50H-90: 90 kVA</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Multiple Output Voltages</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">Continuous Duty Design</span>
+										</div>
+										<div className="flex items-center text-sm">
+											<div className="w-2 h-2 bg-accent mr-3"></div>
+											<span className="text-muted-foreground">European Equipment Compatible</span>
+										</div>
+									</div>
+									<Button className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-all duration-300 border-2 border-border hover:border-accent font-bold uppercase tracking-wide">
+										Learn More
+										<ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
+									</Button>
+								</CardContent>
+							</Card>
+						</Link>
+					</div>
+
+					<div className="text-center mt-16">
+						<Button className="bg-accent hover:bg-accent/90 text-accent-foreground border-2 border-accent font-bold uppercase tracking-wide px-8 py-4">
+							View All Frequency Converters
+						</Button>
+					</div>
+				</div>
+			</section>
+
 			{/* Contact Section */}
 			<section id="contact" className="py-20">
 				<div className="container mx-auto px-4">
@@ -336,15 +452,6 @@ export default function Home() {
 									</div>
 								</div>
 
-								<div className="flex items-center space-x-4">
-									<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-										<Phone className="h-6 w-6 text-accent-foreground" />
-									</div>
-									<div>
-										<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-										<p className="text-muted-foreground">+1 (555) 123-4567</p>
-									</div>
-								</div>
 
 								<div className="flex items-center space-x-4">
 									<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
@@ -352,7 +459,7 @@ export default function Home() {
 									</div>
 									<div>
 										<p className="font-bold text-foreground uppercase tracking-wide">Location</p>
-										<p className="text-muted-foreground">Houston, TX 77001, USA</p>
+										<p className="text-muted-foreground">32 N Gould St, Sheridan, WY 82801, USA</p>
 									</div>
 								</div>
 							</div>

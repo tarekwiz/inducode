@@ -5,6 +5,7 @@ import { Manrope } from 'next/font/google'
 import './globals.css'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/header'
 
 const geist = Geist({
@@ -20,8 +21,8 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-	title: 'Inducode Technologies - Sustainable Energy Solutions',
-	description: 'Leading provider of sustainable energy technologies and engineering solutions',
+	title: 'Inducode Technologies',
+	description: 'Inducode Technologies LLC is one of the World\'s most trusted providers of sustainable energy efficient technologies for businesses.',
 	generator: 'v0.app',
 }
 
@@ -41,14 +42,14 @@ export default function RootLayout({
 					<div className="container mx-auto px-4">
 						<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 							<div className="space-y-4">
-								<Link href="/" className="flex items-center space-x-3">
-									<div className="w-8 h-8 bg-accent border-2 border-accent flex items-center justify-center">
-										<span className="text-accent-foreground font-bold text-sm">I</span>
-									</div>
-									<div>
-										<h3 className="font-bold text-lg tracking-wider">INDUCODE</h3>
-										<p className="text-xs uppercase tracking-widest opacity-80">TECHNOLOGIES</p>
-									</div>
+								<Link href="/" className="flex items-center">
+									<Image
+										src="/images/inducode-logo-white.png"
+										alt="Inducode Technologies LLC"
+										width={180}
+										height={54}
+										className="h-10 w-auto"
+									/>
 								</Link>
 								<p className="text-sm opacity-80 leading-relaxed">
 									Inducode Technologies LLC is one of the world's most trusted providers of
@@ -145,6 +146,22 @@ export default function RootLayout({
 											Fire Fighting Systems
 										</Link>
 									</li>
+									<li>
+										<Link
+											href="/frequency-converter-400hz"
+											className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide"
+										>
+											60Hz to 400Hz Converters
+										</Link>
+									</li>
+									<li>
+										<Link
+											href="/frequency-converter-50hz"
+											className="hover:opacity-100 hover:text-accent transition-colors uppercase tracking-wide"
+										>
+											60Hz to 50Hz Converters
+										</Link>
+									</li>
 								</ul>
 							</div>
 
@@ -152,15 +169,14 @@ export default function RootLayout({
 								<h4 className="font-bold uppercase tracking-wide">Contact Us</h4>
 								<div className="space-y-2 text-sm opacity-80">
 									<p>info@inducode.com</p>
-									<p>+1 (555) 123-4567</p>
-									<p>Houston, TX 77001, USA</p>
+									<p>32 N Gould St, Sheridan, WY 82801, USA</p>
 								</div>
 							</div>
 						</div>
 
 						<div className="border-t-2 border-primary-foreground/20 mt-8 pt-8 text-center">
 							<p className="text-sm opacity-80 uppercase tracking-wide">
-								Copyright 2025 Inducode Technologies LLC. All Rights Reserved.
+								Copyright 2018 Inducode Technologies LLC all rights reserved
 							</p>
 						</div>
 					</div>

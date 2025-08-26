@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, ChevronDown, Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Header() {
@@ -14,15 +15,14 @@ export default function Header() {
 			<div className="container mx-auto px-4 py-4">
 				<nav className="flex items-center justify-between">
 					<Link href="/" className="flex items-center space-x-3">
-						<div className="w-10 h-10 bg-accent border-2 border-accent flex items-center justify-center">
-							<span className="text-accent-foreground font-bold text-lg">I</span>
-						</div>
-						<div>
-							<h1 className="font-bold text-2xl text-foreground tracking-wider">INDUCODE</h1>
-							<p className="text-xs text-muted-foreground uppercase tracking-widest font-medium">
-								TECHNOLOGIES
-							</p>
-						</div>
+						<Image
+							src="/images/inducode-logo-color.png"
+							alt="Inducode Technologies LLC"
+							width={200}
+							height={60}
+							className="h-12 w-auto"
+							priority
+						/>
 					</Link>
 
 					{/* Mobile menu button */}
@@ -38,7 +38,7 @@ export default function Header() {
 					<div className="hidden md:flex items-center space-x-6">
 						<div className="relative group">
 							<button className="flex items-center text-muted-foreground hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm p-2">
-								About Us
+								About Inducode
 								<ChevronDown className="ml-1 h-3 w-3" />
 							</button>
 							<div className="absolute top-full left-0 w-64 bg-card border-2 border-border shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -46,19 +46,19 @@ export default function Header() {
 									href="/why-us"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Why Us
+									Why Inducode
 								</Link>
 								<Link
 									href="/vision-and-mission"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Vision and Mission
+									Vision & Mission
 								</Link>
 								<Link
 									href="/culture-and-strategy"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Culture and Strategy
+									Culture & Strategy
 								</Link>
 								<Link
 									href="/values"
@@ -139,13 +139,13 @@ export default function Header() {
 									href="/lpg-gas-safety-system"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									LPG & GAS Safety System
+									LPG & GAS Safety
 								</Link>
 								<Link
 									href="/thermo-and-heating-systems"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Thermo and Heating Systems
+									Thermo & Heating Systems
 								</Link>
 								<Link
 									href="/comfort-hvac-technologies"
@@ -157,19 +157,31 @@ export default function Header() {
 									href="/low-medium-voltage-distribution"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Low & Medium Voltage Distribution
+									Low & Medium Voltage Systems
 								</Link>
 								<Link
 									href="/low-current-system"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
-									Low Current System
+									Low Current Systems
 								</Link>
 								<Link
 									href="/energy-solutions"
 									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
 								>
 									Energy Solutions
+								</Link>
+								<Link
+									href="/frequency-converter-400hz"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									60Hz to 400Hz Frequency Converters
+								</Link>
+								<Link
+									href="/frequency-converter-50hz"
+									className="block px-4 py-3 hover:bg-muted hover:text-accent transition-colors font-medium uppercase tracking-wide text-sm text-muted-foreground"
+								>
+									60Hz to 50Hz Frequency Converters
 								</Link>
 							</div>
 						</div>
@@ -362,6 +374,20 @@ export default function Header() {
 											>
 												Energy Solutions
 											</Link>
+											<Link
+												href="/frequency-converter-400hz"
+												className="block px-4 py-2 text-sm text-muted-foreground hover:text-accent hover:bg-background transition-colors"
+												onClick={() => setMobileMenuOpen(false)}
+											>
+												60Hz to 400Hz Converters
+											</Link>
+											<Link
+												href="/frequency-converter-50hz"
+												className="block px-4 py-2 text-sm text-muted-foreground hover:text-accent hover:bg-background transition-colors"
+												onClick={() => setMobileMenuOpen(false)}
+											>
+												60Hz to 50Hz Converters
+											</Link>
 										</div>
 									</div>
 								)}
@@ -432,7 +458,7 @@ export default function Header() {
 							{/* About Us Mobile */}
 							<div className="px-4 py-3 border-t border-border">
 								<p className="text-xs font-bold text-foreground uppercase tracking-wide mb-3">
-									About Us
+									About Inducode
 								</p>
 								<div className="space-y-1">
 									<Link
@@ -440,21 +466,21 @@ export default function Header() {
 										className="block py-2 text-sm text-muted-foreground hover:text-accent transition-colors"
 										onClick={() => setMobileMenuOpen(false)}
 									>
-										Why Us
+										Why Inducode
 									</Link>
 									<Link
 										href="/vision-and-mission"
 										className="block py-2 text-sm text-muted-foreground hover:text-accent transition-colors"
 										onClick={() => setMobileMenuOpen(false)}
 									>
-										Vision and Mission
+										Vision & Mission
 									</Link>
 									<Link
 										href="/culture-and-strategy"
 										className="block py-2 text-sm text-muted-foreground hover:text-accent transition-colors"
 										onClick={() => setMobileMenuOpen(false)}
 									>
-										Culture and Strategy
+										Culture & Strategy
 									</Link>
 									<Link
 										href="/values"
