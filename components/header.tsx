@@ -93,11 +93,28 @@ export default function Header() {
 											LPG & GAS Safety System
 										</Link>
 										<Link
-											href="/thermo-and-heating-systems
-"
+											href="/thermo-and-heating-systems"
 											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
 										>
 											Thermo and Heating Systems
+										</Link>
+										<Link
+											href="/comfort-hvac-technologies"
+											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
+										>
+											Comfort & HVAC Technologies
+										</Link>
+										<Link
+											href="/low-medium-voltage-distribution"
+											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
+										>
+											Low & Medium Voltage Distribution
+										</Link>
+										<Link
+											href="/low-current-system"
+											className="block px-4 py-3 hover:bg-muted transition-colors font-medium uppercase tracking-wide text-sm"
+										>
+											Low Current System
 										</Link>
 									</div>
 								</div>
