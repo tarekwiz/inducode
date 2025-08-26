@@ -5,7 +5,6 @@ import {
 	ArrowRight,
 	Users,
 	Mail,
-	Phone,
 	MapPin,
 	Zap,
 	Shield,
@@ -386,7 +385,7 @@ export default function ProposalAndDesign() {
 							</Button>
 						</div>
 
-						<div className="grid md:grid-cols-3 gap-8 mt-16">
+						<div className="grid md:grid-cols-2 gap-8 mt-16">
 							<div className="text-center space-y-4">
 								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto">
 									<Mail className="h-8 w-8 text-accent-foreground" />
@@ -397,12 +396,6 @@ export default function ProposalAndDesign() {
 								</div>
 							</div>
 
-							<div className="text-center space-y-4">
-								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto">
-								<div>
-									<p className="font-bold text-foreground uppercase tracking-wide">Call Us</p>
-								</div>
-							</div>
 
 							<div className="text-center space-y-4">
 								<div className="w-16 h-16 bg-accent border-2 border-accent flex items-center justify-center mx-auto">

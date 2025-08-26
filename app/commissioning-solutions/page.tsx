@@ -396,7 +396,7 @@ export default function CommissioningSolutions() {
 							</Button>
 						</div>
 
-						<div className="grid md:grid-cols-3 gap-8 mt-16">
+						<div className="grid md:grid-cols-2 gap-8 mt-16">
 							<div className="flex items-center justify-center space-x-4">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
 									<Mail className="h-6 w-6 text-accent-foreground" />
@@ -407,12 +407,6 @@ export default function CommissioningSolutions() {
 								</div>
 							</div>
 
-							<div className="flex items-center justify-center space-x-4">
-								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
-								<div className="text-left">
-									<p className="font-bold text-foreground uppercase tracking-wide">Phone</p>
-								</div>
-							</div>
 
 							<div className="flex items-center justify-center space-x-4">
 								<div className="w-12 h-12 bg-accent border-2 border-accent flex items-center justify-center">
